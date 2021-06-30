@@ -1,3 +1,4 @@
+/*Atributos globales*/
 *{
     box-sizing: border-box;
     padding:0;
@@ -7,31 +8,76 @@
 html{
     font-size: 62.5%;
 }
+/*Header*/
 .encabezado-formulario{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 0.1rem solid black;
+    border: 0.1rem solid whitesmoke;
     background-color: steelblue;
     color:whitesmoke;
     border-radius: 0.3rem;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 0.2rem;
 }
+/*Main*/
 .container {
     
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    border: 0.1rem solid black;
+    /* border: 0.1rem solid black; */
     background-color: steelblue;
     color:whitesmoke;
+    width: 100%;
+    margin:auto;
     border-radius: 0.3rem;
 }
-.datosCliente{
 
+.formulario {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border: 0.2rem solid black; */
     width: 100%;
+    padding: 0.5rem 0;
+
 }
 
+.container-cliente{
 
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 0.1rem solid whitesmoke;
+    border-radius: 0.3rem;
+    width: 100%;
+    
+}
+.formulario label {
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+}
+
+.datos-cliente-leyenda{
+    font-size: 1.6rem;
+    width: 25%;
+}
+.input-cliente{
+    padding:0.2rem 0;
+    width: 100%;
+}
+/*Formulario de productos*/
+.container-producto{
+    border: 0.1rem solid whitesmoke;
+    display: none;
+
+}
 
 .errores{
     -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -42,16 +88,8 @@ html{
     color: #fff;
     display: none;
     font-size: 14px;
-    margin-top: -50px;
-    margin-left: 180px;
+    /* margin-top: -50px;
+    margin-left: 180px; */
     padding: 10px;
-    position: absolute;
-}
-
-.containter-producto {
-
-    height: 20rem;
-    background-color: gray;
-    display: none;
-    
+    /* position: absolute; */
 }

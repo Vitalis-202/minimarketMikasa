@@ -32,7 +32,7 @@ $(document).ready(function(){
             }
             else{
                 $("#mensaje2").fadeOut();
-                $(".containter-producto").fadeIn("slow");
+                $(".container-producto").fadeIn("slow");
   
             }
         }
