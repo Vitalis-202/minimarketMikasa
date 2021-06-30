@@ -25,35 +25,58 @@
         </header>
         <!--Formulario-->
         <main class="container">
-            <!-- <form action="" method="">
+            <form id="miFormulario" action="" method="">
 
-                <div class="datos">
-                    <label class="">
-                        <span>Nombre</span>
-                        <input type="text" placeholder="Ingrese su nombre" id="txtNombre" >
-                    </label>
-
-                </div>
-
-            </form> -->
-
-            <form id="basic-form">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese nombre de cliente">
+                <div class="container-cliente">
+                    <div class="datos-cliente">
+                        <label for="txtNombre">
+                            <span>Nombre:</span>
+                            <input type="text" placeholder="Ingrese nombre del cliente" id="txtNombre" >
+                            <div id="mensaje1" class="errores"> Dame tu nombre</div>
+    
+                        </label>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    <div class="datos-cliente">
+                        <label for="txtEmail">
+                            <span>Email:</span>
+                            <input type="text" placeholder="Ingrese correo electrónico" id="txtEmail" >
+                            <div id="mensaje2" class="errores"> Dame un mail correcto</div>
+                        </label>
                     </div>
-                  
+
                 </div>
-                    
-                <div class="form-group">
-                  <br><br>
+                
+                <input type="button" id="btnRegistrar" value="Validar" class="boton" />
+                <!-- <input type="submit" id="btnRegistrar" value="Enviar datos" class="boton" /> -->
+
+                <div class="containter-producto">
+
+                    <div class="datos-cliente">
+                        <label for="txtPan">
+                            <span>PAN:</span>
+                            <input type="text" placeholder="Ingrese nombre del cliente" id="txtPan" >
+                            
+    
+                        </label>
+                        <div class="datos-cliente">
+                            <label for="txtCarne">
+                                <span>CARNE:</span>
+                                <input type="text" placeholder="Ingrese nombre del cliente" id="txtCarne" >
+                            
+        
+                            </label>
+
+                        </div>
+                    <div id="resultado">
+                        <p id="pResultado">Resultado</p>
+
+                    </div>
+
+                    </div>
+                    <input type="button" id="btnCalcular" value="Calcular" class="boton" />
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar Venta</button>
+
+                <input type="submit" id="btnEnviar" value="Enviar" class="boton" />
             </form>
 
         </main>

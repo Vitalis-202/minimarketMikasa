@@ -18,5 +18,38 @@ html{
 }
 .container {
     
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0.1rem solid black;
+    background-color: steelblue;
+    color:whitesmoke;
+    border-radius: 0.3rem;
+}
+.datosCliente{
+
+    width: 100%;
+}
+
+
+
+.errores{
+    -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 180px;
+    padding: 10px;
+    position: absolute;
+}
+
+.containter-producto {
+
+    height: 20rem;
+    background-color: gray;
 }
