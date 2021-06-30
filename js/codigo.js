@@ -3,6 +3,7 @@ var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
 $(document).ready(function(){
     //función click
+
     $("#btnRegistrar").click(function(){
         //Guardar en variables el valor que tengan las cajas de texto
         //Por medio de los id's
@@ -31,6 +32,7 @@ $(document).ready(function(){
             }
             else{
                 $("#mensaje2").fadeOut();
+                $(".containter-producto").fadeIn("slow");
   
             }
         }
@@ -39,22 +41,14 @@ $(document).ready(function(){
 
     $("#btnCalcular").click(function(){
       
-      var pan = $("#txtPan").val();
-      var carne = $("#txtCarne").val();
-
-      var precioPan = 200;
-      var precioCarne = 500;
-
+      var cantidad = $("#txtCantidad").val();
+      var precio = $("#txtPrecio").val();
       var resultado;
-      resultado = pan * precioPan + carne * precioCarne;
+
+      resultado = cantidad*precio*1.19;
 
       console.log(resultado);
       $("#pResultado").text(resultado);
-      
-
-      // --- Condicionales anidados ----
-      
-      
 
   });//click
 
