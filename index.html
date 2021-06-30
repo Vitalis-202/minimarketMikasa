@@ -50,18 +50,22 @@
                     <div class="datos-cliente">
                         <label for="txtCantidad">Cantidad:</label>
                         <input type="number" placeholder="Ingrese nombre del cliente" id="txtCantidad" class="input-cliente">
+                        <div id="mensaje3" class="errores"> Indique Cantidad</div>
                     </div>
                     <div class="datos-cliente">
                         <label for="txtPrecio">Precio:</label>
                         <input type="number" placeholder="Ingrese nombre del cliente" id="txtPrecio" class="input-cliente">
                     </div>
-                    <div id="resultado">
-                        <p id="pResultado">Resultado</p>
+                    <div id="resultado" class="resultado-producto">
+                        <p id="pResultado"></p>
+                        <div id="mensaje4" class="errores"> Indique precio</div>
                     </div>
+
                     <input type="button" id="btnCalcular" value="Calcular" class="boton" />
                     
                 </fieldset>
 
+                
                 <input type="submit" id="btnEnviar" value="Enviar" class="boton" />
 
             </form>

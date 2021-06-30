@@ -47,9 +47,33 @@ $(document).ready(function(){
 
       resultado = cantidad*precio*1.19;
 
-      console.log(resultado);
-      $("#pResultado").text(resultado);
+      if(cantidad==""){
 
+        $("#mensaje3").fadeIn("slow");
+        return false;
+
+      }
+      else{
+
+            $("#mensaje3").fadeOut();
+            
+      
+            if(precio==""){
+
+                $("#mensaje4").fadeIn("slow");
+                return false;
+
+            }else{
+
+                console.log(resultado);
+                $("#mensaje4").fadeOut();
+                $("#pResultado").text(resultado);
+                $("#btnEnviar").fadeIn("slow");
+                
+            }
+
+        }
+          
   });//click
 
 
